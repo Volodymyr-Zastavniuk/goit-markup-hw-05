@@ -47,7 +47,7 @@
       <!-- Секция герой -->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button">Заказать услугу</button>
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
       </section>
       <!-- Особенности компании -->
       <section class="section features">
@@ -106,22 +106,25 @@
         <div class="container">
           <h2 class="title tasks-title">Чем мы занимаемся</h2>
           <ul class="list tasks-list">
-            <li>
+            <li class="tasks-item">
               <img
                 src="./images/work-app-development.jpg"
                 alt="Разработка приложения на комьютере"
                 width="370"
               />
+              <p class="tasks-content">Десктопные приложения</p>
             </li>
-            <li>
+            <li class="tasks-item">
               <img
                 src="./images/work-mobile-app.jpg"
                 alt="Макеты мобильных приложений"
                 width="370"
               />
+              <p class="tasks-content">Мобильные приложения</p>
             </li>
-            <li>
+            <li class="tasks-item">
               <img src="./images/work-color.jpg" alt="Дизайнерская палитра цветов" width="370" />
+              <p class="tasks-content">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -393,5 +396,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p></p>
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal-icon-close">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
